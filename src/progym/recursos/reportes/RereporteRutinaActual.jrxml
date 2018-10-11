@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RereporteRutinaActual" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0946bf5b-f105-48ea-9934-884b0fbab94b">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="nameRutina" class="java.lang.String"/>
+	<parameter name="codigoRutina" class="java.lang.String"/>
+	<field name="codigo" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="repe1" class="java.lang.String"/>
+	<field name="repe2" class="java.lang.String"/>
+	<field name="repe3" class="java.lang.String"/>
+	<field name="repe4" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="133" y="0" width="422" height="79" backcolor="#ABDFD3" uuid="3d38afe4-b855-4cfe-93d0-5bcb4c252582"/>
+				<graphicElement>
+					<pen lineWidth="1.25" lineStyle="Solid" lineColor="#FF0033"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="164" y="10" width="370" height="36" uuid="d151ae99-9059-4f92-9ce6-00246084b7b0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nameRutina}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="46" width="100" height="20" uuid="2f3fd426-6dbd-49b7-9c6d-a015407bf3b9"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{codigoRutina}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="28" y="2" width="79" height="77" uuid="12f6dece-d688-4449-ad7f-b31ecf44cd3b"/>
+				<box>
+					<pen lineColor="#CC0000"/>
+					<topPen lineColor="#CC0000"/>
+					<leftPen lineColor="#CC0000"/>
+					<bottomPen lineColor="#CC0000"/>
+					<rightPen lineColor="#CC0000"/>
+				</box>
+				<imageExpression><![CDATA["C:\\Users\\Klac\\Documents\\Programación Temporal Ariel\\NetBeans 7.3\\proGym\\src\\progym\\recursos\\reportes\\icon_TitleReporte79x79.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="5" width="555" height="28" backcolor="#E1CDD8" uuid="68497c5e-bd38-4929-b0a8-5c4a997898da"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="4" y="13" width="59" height="20" uuid="145a5b9a-1411-4b50-80e6-da15772533ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Codigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="13" width="130" height="20" uuid="560b3290-e2cb-4e76-bf25-c1771cc2b8e8"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="13" width="70" height="20" uuid="fd8c1a6f-d6d4-4a45-95d2-e758b6b378f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Repeticion 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="13" width="66" height="20" uuid="4ae31700-4d69-4a2d-a9bc-f7733d5c8337"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Repeticion 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="13" width="65" height="20" uuid="d1d77759-2d13-4a06-90de-e5e1ffbdad44"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Repeticion 3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="13" width="69" height="20" uuid="46d6a061-163b-4e0d-86df-163d037da5d6"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Repeticion 4]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="4" y="2" width="59" height="20" uuid="c43ac825-488c-490d-abf1-a3b63613fa6f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="2" width="130" height="20" uuid="339a3d2e-efb6-4955-9ae5-f3c589cda662"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="2" width="70" height="20" uuid="e216d558-7c12-41ce-9808-a5c1d73bf04e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{repe1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="2" width="66" height="20" uuid="67209a08-a56b-4b6c-b4e6-3394d4eb8990"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{repe2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="2" width="65" height="20" uuid="c99b2879-b6b2-4282-80b0-ec76443d1405"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{repe3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="2" width="69" height="20" uuid="940035f0-d074-42b0-b087-672ca9a148d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{repe4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="20" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="16" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement x="21" y="11" width="513" height="26" uuid="14e6e9a5-f7c5-44ba-b979-18edafe95fb2"/>
+				<textElement>
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Reporte generado por ProGym, como seguimiento del proceso de levantamiento de pesas. API utilizada "JasperReport", diseñado con Jaspersoft Studio.]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

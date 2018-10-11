@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<rutinas>
+    <rutina1 nombre="Pecho y Espalda" />
+    <rutina2 nombre="Triceps y Biceps" />
+    
+</rutinas>

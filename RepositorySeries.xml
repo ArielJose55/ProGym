@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<series>
+    
+    <cantidadRutinas cantidad="2"/>
+    
+    <rutina_1 nombre="Pecho y Espalda">
+        
+        <serie_1 nombre = "Pecho Plano"/>
+            
+        <serie_1 nombre = "Pecho Inclinado"/>
+        
+        <serie_1 nombre = "Putlogger"/>
+        
+        <serie_1 nombre = "Pecho con Mancuernas Plano"/>
+        
+        <serie_1 nombre = "Pecho con Mancuernas Inclinado"/>
+        
+        <serie_1 nombre = "Espalda con Barra Vertical Atras"/>
+        
+        <serie_1 nombre = "Espalda con Barra Vertical Frontal"/>
+        
+        <serie_1 nombre = "Hombro Levantamiento Horizontal Frontal"/>
+        
+        <serie_1 nombre = "Hombro con Mancuernas Lateral"/>
+        
+        <serie_1 nombre = "Hombro con Mancuernas Frontal"/>
+        
+    </rutina_1>
+    
+    
+    <rutina_2 nombre="Triceps y Biceps">
+        
+        <serie_2 nombre="Triceps Arriba"/>
+        
+        <serie_2 nombre="Triceps con Mancuerna"/>
+        
+        <serie_2 nombre="Triceps con Barra"/>
+        
+        <serie_2 nombre="Flexiones de Pecho"/>
+        
+        <serie_2 nombre="Biceps con Barra Horizontal"/>
+
+        <serie_2 nombre="Biceps con Barra Vertical"/>
+        
+        <serie_2 nombre="Biceps con Barra Invertida"/>
+        
+        <serie_2 nombre="Biceps con Mancuerna"/>
+        
+    </rutina_2>
+    
+    
+    
+    
+
+</series>
